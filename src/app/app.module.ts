@@ -14,6 +14,7 @@ import { MapDialogComponent } from './map-dialog/map-dialog.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { UpdateDialogComponent } from './update-dialog/update-dialog.component';
 import { FormsModule } from '@angular/forms';
+import { DocsComponent } from './docs/docs.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { FormsModule } from '@angular/forms';
     MarkersComponent,
     NavbarComponent,
     MapDialogComponent,
-    UpdateDialogComponent
+    UpdateDialogComponent,
+    DocsComponent
   ],
   imports: [
     BrowserModule,

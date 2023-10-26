@@ -13,7 +13,6 @@ import { Icon, Style } from 'ol/style';
 import { Pointer, Select } from 'ol/interaction';
 import { MatDialog } from '@angular/material/dialog';
 import { MapDialogComponent } from '../map-dialog/map-dialog.component';
-import { UpdateDialogComponent } from '../update-dialog/update-dialog.component';
 import { platformModifierKeyOnly } from 'ol/events/condition';
 
 @Component({
@@ -160,7 +159,7 @@ export class MarkersComponent implements OnInit {
     const nbrAttachment = marker.get('nbrAttachment');
     const nbrBikes = marker.get('nbrBikes');
     const nbrFreeAttachment = marker.get('nbrFreeAttachment');
-    const dialogRef = this.dialog.open(UpdateDialogComponent, {
+    const dialogRef = this.dialog.open(MapDialogComponent, {
       data: { stationName, nbrBikes, nbrAttachment },
       width: "25em",
       height: "auto"

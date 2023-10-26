@@ -1,20 +1,25 @@
 <div id="dialogContainer">
-    <h1>Ajouter une station</h1>
+    <h1>{{isCreation ? "Ajouter une station" : "Modifier la station"}}</h1>
     <img src="../../assets/img/bike.png" alt="bike_img">
     <ul>
         <li>
             <span>Nom de la station :</span>
-            <input type="text" #nomStation>
+            <input type="text" #nomStation [(ngModel)]="data.stationName">
         </li>
         <li>
             <span>Nombre de vélos :</span>
-            <input type="text" #nombreVelos>
+            <input type="text" #nombreVelos [(ngModel)]="data.nbrBikes">
         </li>
         <li>
             <span>Nombre d'attaches :</span>
-            <input type="text" #nombreAttaches>
+            <input type="text" #nombreAttaches  [(ngModel)]="data.nbrAttachment">
         </li>
     </ul>
 
-    <button (click)="addStation(nomStation.value, nombreVelos.value, nombreAttaches.value)">Ajouter</button>
+    <button (click)="addStation(nomStation.value, nombreVelos.value, nombreAttaches.value)" *ngIf="isCreation">
+        Ajouter
+    </button>
+    <button (click)="updateStation(nomStation.value, nombreVelos.value, nombreAttaches.value)" *ngIf="!isCreation">
+        Modifier
+    </button>
 </div>

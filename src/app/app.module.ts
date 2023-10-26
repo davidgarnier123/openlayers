@@ -12,7 +12,6 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MapDialogComponent } from './map-dialog/map-dialog.component';
 import { MatDialogModule } from '@angular/material/dialog';
-import { UpdateDialogComponent } from './update-dialog/update-dialog.component';
 import { FormsModule } from '@angular/forms';
 import { DocsComponent } from './docs/docs.component';
 
@@ -24,7 +23,6 @@ import { DocsComponent } from './docs/docs.component';
     MarkersComponent,
     NavbarComponent,
     MapDialogComponent,
-    UpdateDialogComponent,
     DocsComponent
   ],
   imports: [

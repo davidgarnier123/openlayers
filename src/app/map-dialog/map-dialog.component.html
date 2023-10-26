@@ -1,0 +1,20 @@
+<div id="dialogContainer">
+    <h1>Ajouter une station</h1>
+    <img src="../../assets/img/bike.png" alt="bike_img">
+    <ul>
+        <li>
+            <span>Nom de la station :</span>
+            <input type="text" #nomStation>
+        </li>
+        <li>
+            <span>Nombre de vélos :</span>
+            <input type="text" #nombreVelos>
+        </li>
+        <li>
+            <span>Nombre d'attaches :</span>
+            <input type="text" #nombreAttaches>
+        </li>
+    </ul>
+
+    <button (click)="addStation(nomStation.value, nombreVelos.value, nombreAttaches.value)">Ajouter</button>
+</div>

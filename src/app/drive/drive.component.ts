@@ -78,7 +78,7 @@ export class DriveComponent implements OnInit {
     });
 
     this.addMarker([-1.167648, 46.140997], 'assets/img/home.png');
-    this.addMarker([-1.176882, 46.166885], 'assets/img/office.png');
+    this.addMarker([-1.183027,46.170092], 'assets/img/office.png');
 
     this.animatedMarker = new Feature({
       geometry: new Point([-1.167648, 46.140997]),
